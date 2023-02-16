@@ -38,6 +38,13 @@ function addItem(e) {
   li.appendChild(editBtn);
   // Append li to list
   itemList.appendChild(li);
+  var user = {
+    item: newItem,
+    description: itemDescription
+  };
+
+  // Save user object to local storage
+;
   localStorage.setItem(newItem, itemDescription);
   console.log(localStorage.getItem(newItem));
 
